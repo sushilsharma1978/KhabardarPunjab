@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backimage_light"
+    tools:context=".Videowebview">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<WebView
+        android:layout_width="match_parent"
+        android:id="@+id/wv_live"
+
+        android:layout_height="match_parent"/>-->
+    <com.punjab.khabardarpunjab.FullScreenVideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView"/>
+   <!-- <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />-->
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_loader3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        app:indicatorColor="@android:color/white"
+        />
+</FrameLayout>
+
+
+</LinearLayout>
